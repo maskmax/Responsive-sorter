@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="js/sorter.js"></script>
+    <script type="text/javascript">
+        // JavaScript
+
+
+
+    </script>
+    <style>
+        div{
+            padding: 5px;
+            width:90%;
+
+            margin: 25px;
+            font-size:30px ;
+            font-weight: bolder;
+            color:#fff;
+            text-align: center;
+        }
+
+        .div1{ background-color: #F04903; color:#fff;}
+        .div2{ background-color: #3C3741; color:#fff;}
+        .div3{ background-color: #54573A; color:#fff;}
+        .div4{ background-color: #3D8EB9; color:#fff;}
+
+        i{ border-radius:50%; background-color:#888;color:#fff; padding: 4px;  }
+    </style>
+</head>
+<body style="background-color:#999">
+<h1>Bootstrap (default)</h1>
+    <div class="mrs mrs1lg mrs1md mrs4sm div1"><i>1</i> mrs1lg mrslmd mrs4sm  </div>
+    <div class="mrs mrs3lg mrs2md mrs3sm div2"><i>2</i> mrs3lg mrs2md mrs3sm   </div>
+    <div class="mrs mrs2lg mrs3md mrs2sm div3"><i>3</i> mrs2lg mrs3md mrs2sm   </div>
+    <div class="mrs mrs1lg mrs4md mrs1sm div4"><i>4</i> mrs1lg mrs4md mrs1sm   </div>
+
+<h1>Custom</h1>
+    <div class="cus cus1first cus4second div1"><i>1</i> cus1lg cuslmd cus4sm  </div>
+    <div class="cus cus3first cus3second div2"><i>2</i> cus3lg cus2md cus3sm   </div>
+    <div class="cus cus2first cus2second div3"><i>3</i> cus2lg cus3md cus2sm   </div>
+    <div class="cus cus1first cus1second div4"><i>4</i> cus1lg cus4md cus1sm   </div>
+
+
+    <script>
+    window.onload = function () {
+        var basic=new ResponsiveSorter();
+        var custom=new ResponsiveSorter({prefix:'cus',width :[
+                ,{name:'second',min:0,max:1200}
+                ,{name:'first',min:1200,max:3000000} ]});
+
+
+    }
+</script>
+</body>
+</html>
