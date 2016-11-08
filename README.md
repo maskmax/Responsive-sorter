@@ -28,9 +28,10 @@ sorting class mrs3md means when the window width is md (from 992px to 1200px) pu
     <div class="mrs mrs1lg mrs4md mrs1sm"><i>4</i></div>
 ```
 
+### Custom Setup
 You can have your custom sorter prefix , width points like bellow
 ```html
-<script src="js/sorter.js"></script>
+<script src="sorter.js"></script>
 <script type="text/javascript">
 window.onload = function () {
 var custom=new ResponsiveSorter({prefix:'cus',//default mrs
