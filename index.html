@@ -36,18 +36,18 @@
     <div class="mrs mrs1lg mrs4md mrs1sm div4"><i>4</i> mrs1lg mrs4md mrs1sm   </div>
 
 <h1>Custom</h1>
-    <div class="cus cus1first cus4second div1"><i>1</i> cus1lg cuslmd cus4sm  </div>
-    <div class="cus cus3first cus3second div2"><i>2</i> cus3lg cus2md cus3sm   </div>
-    <div class="cus cus2first cus2second div3"><i>3</i> cus2lg cus3md cus2sm   </div>
-    <div class="cus cus1first cus1second div4"><i>4</i> cus1lg cus4md cus1sm   </div>
+    <div class="cus cus1first cus4second div1"><i>1</i>cus1first cus4second </div>
+    <div class="cus cus3first cus3second div2"><i>2</i>cus3first cus3second   </div>
+    <div class="cus cus2first cus2second div3"><i>3</i> cus2first cus2second    </div>
+    <div class="cus cus1first cus1second div4"><i>4</i> cus1first cus1second   </div>
 
 
     <script>
     window.onload = function () {
         var basic=new ResponsiveSorter();
-        var custom=new ResponsiveSorter({prefix:'cus',width :[
-                ,{name:'second',min:0,max:1200}
-                ,{name:'first',min:1200,max:3000000} ]});
+        var custom=new ResponsiveSorter({prefix:'cus',
+            width :[ {name:'first',min:0,max:1200},
+            {name:'second',min:1200,max:3000000} ] });
 
 
     }
