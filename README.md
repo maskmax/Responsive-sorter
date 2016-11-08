@@ -16,7 +16,7 @@ var mysorter=new ResponsiveSorter();
  
 ```
 
-```
+
 ### 2.Set up your HTML
 All you need is to add your prefix (default is mrs) and sorting class to elements. sorting class starts with prefix then rank number and after that width range name.
 sorting class mrs3md means when the window width is md (from 992px to 1200px) put this element in the 3th position.
