@@ -7,7 +7,7 @@ This library allows you to swap HTML elements based on browser width.
 Set up you code like this
 
 ```html
-<script src="js/sorter.js"></script>
+<script src="sorter.js"></script>
 <script type="text/javascript">
 window.onload = function () {
 var mysorter=new ResponsiveSorter();
